@@ -1,0 +1,45 @@
+thead{
+    color: 	#4682B4;
+    border: solid #add9c0;
+}
+
+tbody{
+    /*color: green;*/
+    height: 35px;
+    font-weight: bold;
+}
+#addbutton{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    /*float: right;*/
+}
+.button{
+    font-weight: bold;
+}
+
+#title{
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.td{
+    border:solid #add9c0;
+    border-width:0px 1px 1px 0px;
+    padding:10px 0px;
+}
+
+#table{
+    border: 2px solid #2F4F4F;
+}
+
+/*
+#AddInformation{
+    border: 2px solid #2F4F4F;
+}
+
+#modify{
+    border: 2px solid #2F4F4F;
+}
+*/

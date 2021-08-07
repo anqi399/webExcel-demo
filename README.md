@@ -1,2 +1,6 @@
 # webExcel-demo
-a very rudimentary web Excel demo
+因为某种原因，重新接触到JS，在练习的时候写了一个模仿Excel的表格，可以实现简单的修改、删除、添加功能  
+实现简单，页面较为简陋  
+存在的问题：  
+add新的信息后，modify和delete按钮的字体不会加粗  
+信息中的序号仅为静态手动输入，未实现删除某个信息后，其他信息的序号会随之改变  

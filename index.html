@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+<div align="center" id="title">Web Excel</div>
+<br />
+<table align="center" id="table">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th colspan="2">操作</th>
+    </tr>
+    </thead>
+    <tbody align="center">
+    <tr>
+        <td>1</td>
+        <td>001</td>
+        <td>silly</td>
+        <td>女</td>
+        <td>8</td>
+        <td>
+<!--            <button type="button" onclick="ModifyInformation(this)">modify</button>-->
+            <input type="button" name="" value="modify" onclick="ModifyInformation(this)" class="button"/>
+        </td>
+        <td>
+<!--            <button type="button" onclick="DeleteInformation(this)">delete</button>-->
+            <input type="button" name="" value="delete" onclick="DeleteInformation(this)" class="button"/>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>002</td>
+        <td>anqi</td>
+        <td>男</td>
+        <td>9</td>
+        <td>
+            <!--            <button type="button" onclick="ModifyInformation(this)">modify</button>-->
+            <input type="button" name="" value="modify" onclick="ModifyInformation(this)" class="button"/>
+        </td>
+        <td>
+            <!--            <button type="button" onclick="DeleteInformation(this)">delete</button>-->
+            <input type="button" name="" value="delete" onclick="DeleteInformation(this)" class="button"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<br />
+<!-- Add button-->
+
+<div align="center" id="addbutton">
+    <input type="button" value="Add" onclick="AddButton()" />
+</div>
+
+
+<!--Add-->
+<div id="AddInformation" align="center" style="display: none">
+    <p>Add</p>
+    序号： <input type="text" id="AddSerialNum" value="3"><br />
+    学号： <input type="text" id="AddId" value="003"><br />
+    姓名： <input type="text" id="AddName" value="Tom"><br />
+    性别：
+    <input name="AddSex" type="radio" checked="checked" >男
+    <input name="AddSex" type="radio" >女
+    <br />
+    年龄：
+    <input type="number" id="AddAge" value="10" ><br />
+    <input type="button" value="Add" onclick="addInformation()" class="button">
+    <input type="button" value="Cancel" onclick="AddCancelInformation()" class="button">
+</div>
+
+<!--modify-->
+<div id="modify" align="center" style="display: none">
+    <p>modify</p>
+    序号： <input type="text" id="ModifySerialNum" value=""><br />
+    学号： <input type="text" id="ModifyId" value=""><br />
+    姓名： <input type="text" id="ModifyName" value=""><br />
+    性别：
+          <input name="ModifySex" type="radio" checked="checked" >男
+          <input name="ModifySex" type="radio" >女
+    <br />
+    年龄：
+          <input type="number" id="ModifyAge" value="" ><br />
+          <input type="button" value="save" onclick="SaveInformation()" class="button">
+          <input type="button" value="cancel" onclick="ModifyCancelInformation()" class="button">
+</div>
+</body>
+</html>
